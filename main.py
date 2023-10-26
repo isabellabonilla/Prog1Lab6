@@ -12,3 +12,19 @@ def encoder(password):
             encoded_password += "2"
     return encoded_password
 
+if __name__ == "__main__":
+    while True:
+        print("Menu")
+        print("-------------")
+        print("1. Encode")
+        print('2. Decode')
+        print("3. Quit")
+        option = input("Please enter an option: ")
+        if option == 1:
+            password = encoder(input("Please enter your password to encode: "))
+            print("Your password has been encoded and stored!")
+        if option == 2:
+            pass
+        if option == 3:
+            break
+
